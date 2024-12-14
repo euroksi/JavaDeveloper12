@@ -2,10 +2,14 @@ package org.example;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Pattern;
 
+@Entity
 public class Planet {
     @Id
+    @Pattern(regexp = "^[A-Z0-9]+$", message = "ID must contain only uppercase Latin letters and numbers")
     private String id;
+
     private String name;
 
     public Planet() {

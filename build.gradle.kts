@@ -20,6 +20,9 @@ dependencies {
     implementation ("com.h2database:h2:2.2.224")
 
     implementation ("org.flywaydb:flyway-core:9.21.2")
+
+    implementation ("jakarta.validation:jakarta.validation-api:3.0.2")
+
 }
 
 tasks.test {
